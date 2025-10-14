@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 
 // replace with your backend URL
-const socket = io("https://chatapp-backendnew-1.onrender.com", {
+const socket = io(" https://chatapp-backendnew-2.onrender.com", {
   withCredentials: true,
 });
 
