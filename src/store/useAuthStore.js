@@ -3,7 +3,7 @@ import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
-const BASE_URL =  "https://chatapp-backendnew-1.onrender.com"
+const baseURL =  "https://chatapp-backend-2-jj1t.onrender.com"
 
 const useAuthStore = create((set,get)=>({  
  authUser: null,
@@ -84,7 +84,7 @@ const useAuthStore = create((set,get)=>({
     const { authUser } = get();
     if (!authUser || get().socket?.connected) return;
 
-    const socket = io(BASE_URL, {
+    const socket = io(baseURL, {
       withCredentials: true, // this ensures cookies are sent with the connection
     });
 
