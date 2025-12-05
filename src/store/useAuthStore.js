@@ -3,11 +3,17 @@ import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
+<<<<<<< HEAD
 
 const BASE_URL = "https://tagtells-backend-1.onrender.com"
 
 
 const useAuthStore = create((set,get)=>({
+=======
+const baseURL =  "https://chatapp-backend1-tpma.onrender.com"
+
+const useAuthStore = create((set,get)=>({  
+>>>>>>> 8f508404f691032112d82a8075146f5ed5437e0b
  authUser: null,
   isCheckingAuth: true,
   isSigningUp: false,
@@ -86,7 +92,11 @@ const useAuthStore = create((set,get)=>({
     const { authUser } = get();
     if (!authUser || get().socket?.connected) return;
 
+<<<<<<< HEAD
     const socket = io(BASE_URL, {
+=======
+    const socket = io(baseURL, {
+>>>>>>> 8f508404f691032112d82a8075146f5ed5437e0b
       withCredentials: true, // this ensures cookies are sent with the connection
     });
 
