@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 
 // replace with your backend URL
-const socket = io(import.meta.env.VITE_BACKEND_URL || "http://localhost:3000", {
+const socket = io("https://tagtells-backend-1.onrender.com", {
   withCredentials: true,
 });
 
